@@ -1,4 +1,5 @@
-# TimeSubtract
+# TimeSubtract [![Code Climate](https://codeclimate.com/github/ponnusamygit/time_subtract.png)](https://codeclimate.com/github/ponnusamygit/time_subtract) [![Dependency Status](https://gemnasium.com/ponnusamygit/time_subtract.svg)](https://gemnasium.com/ponnusamygit/time_subtract)[![Gem Version](https://badge.fury.io/rb/time_subtract.svg)](http://badge.fury.io/rb/time_subtract)
+
 
 Get the difference between two time
 
