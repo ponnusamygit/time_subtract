@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = TimeSubtract::VERSION
   spec.authors       = ["Ponnusamy"]
   spec.email         = ["ponnusamy.gac@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Subtract two time and get a smart string as a return value}
+  spec.description   = %q{Time object subtraction method available for easy use}
+  spec.homepage      = "https://github.com/ponnusamygit/time_subtract"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

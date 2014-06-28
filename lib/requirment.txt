@@ -1,7 +1,0 @@
-
-yesterday # = > Time.now - 1.day
-
-tomorrow # = > Time.now + 1.day
-
-tomorrow.smart_subtract yearterday # => 1 day 23 hoours 
-

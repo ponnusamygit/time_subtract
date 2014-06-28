@@ -1,6 +1,6 @@
 # TimeSubtract
 
-TODO: Write a gem description
+Get the difference between two time
 
 ## Installation
 
@@ -18,12 +18,52 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+	time.smart_subtract time2
+
+	# This will return 
+
+		'2 years 1 month 8 days 10 hours 5 minutes 23 seconds'.
+
+If you want result as hash 
+	
+	(time - time2).time_diff_hash
+	
+	# or
+	
+	seconds = 123456
+	
+	seconds.time_diff_hash
+
+	# This will return
+
+	#=> {:year => 0, :month => 0, :day => 1, :hour=> 10, :minute => 17, :second => 36}
+
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/time_subtract/fork )
+1. Fork it ( https://github.com/ponnusamygit/time_subtract/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+
+## Maintainer
+
+* [Ponnusamy](https://github.com/ponnusamygit)
+
+## Todo
+
+- Get format from user
+
+## Testing
+
+Time Subtract uses RSpec for test coverage. Inside the gem
+directory, you can run the specs with:
+
+    rpsec spec/time_subtract_spec.rb
+
+License
+----
+
+MIT

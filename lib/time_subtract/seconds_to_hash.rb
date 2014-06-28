@@ -1,8 +1,8 @@
 require 'active_support/all'
 
 module SecondsToHash
-	def date_time_hash
-		number = self
+	def time_diff_hash
+		number = self.abs
 		intervals = [:year, :month, :day, :hour, :minute, :second]
 		date_time_hs = {}
 		intervals.each do |interval|
