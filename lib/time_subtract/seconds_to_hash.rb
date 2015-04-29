@@ -1,9 +1,14 @@
 require 'active_support/all'
 
 module SecondsToHash
-	def time_diff_hash
+
+	DEFAULT = [:year, :month, :day, :hour, :minute, :second]
+
+	def time_diff_hash(*intervals)
 		number = self.abs
-		intervals = [:year, :month, :day, :hour, :minute, :second]
+
+		intervals = intervals.present? ? intervals.select{ |interval| interval.in? DEFAULT } : DEFAULT
+
 		date_time_hs = {}
 		intervals.each do |interval|
 			date_time_hs[interval] = (number / (1.send interval)).to_i

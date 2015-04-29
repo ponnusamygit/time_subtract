@@ -21,11 +21,21 @@ Or install it yourself as:
 
 	time.smart_subtract time2
 
+	date.smart_subtract date2
+
 	# This will return 
 
 		'2 years 1 month 8 days 10 hours 5 minutes 23 seconds'.
 
 If you want result as hash 
+	
+	time.smart_subtract(time2, hash: true)
+	
+	# or
+
+	date.smart_subtract(date2, hash: true)
+	
+	# or
 	
 	(time - time2).time_diff_hash
 	
